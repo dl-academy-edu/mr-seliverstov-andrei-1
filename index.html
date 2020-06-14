@@ -13,7 +13,7 @@
         <nav class="header-navigation">
             <ul class="header-list">
                 <li><a class="header-navigation-link" href="#">Blog</a></li>
-                <li><a class="header-navigation-link" href="#">Catalog</a></li>
+                <li><a class="header-navigation-link" href="/pages/catalog/">Catalog</a></li>
                 <li><a class="header-navigation-link" href="#">About Us</a></li>
             </ul>
         </nav>
@@ -143,5 +143,29 @@
 
         </ul>
     </footer>
+    <form action="/" class="modal-window">
+        <label class="form-lable">
+            Name
+            <input class="input-text" type="text" name="name">
+        </label>
+        <label class="form-lable">
+            Phone
+            <input class="input-text" type="tel" name="phone">
+        </label>
+        <label class="form-lable">
+            Email
+            <input class="input-text" type="email" name="email">
+        </label> 
+        <label class="form-lable">
+            Message
+            <textarea name="message" cols="30" rows="10"></textarea>
+        </label>
+        <fieldset>
+            <input name="consent" type="checkbox">
+            By clicking on the button, you consent to the processing of your personal data
+        </fieldset>
+        <button class="submit-button" type="submit">Submit</button>
+        <button class="exit-button" type="button">&#10006;</button>
+    </form>
 </body>
 </html>
