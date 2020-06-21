@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dlk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>DLK</title>
 </head>
 <body>
     <header class="header">
@@ -12,7 +16,7 @@
         </a>
         <nav class="header-navigation">
             <ul class="header-list">
-                <li><a class="header-navigation-link" href="#">Blog</a></li>
+                <li><a class="header-navigation-link" href="/pages/blog/">Blog</a></li>
                 <li><a class="header-navigation-link" href="/pages/catalog/">Catalog</a></li>
                 <li><a class="header-navigation-link" href="#">About Us</a></li>
             </ul>
@@ -75,7 +79,7 @@
             <h2 class="footer-navigation-heading">Navigation</h2>
             <ul class="footer-navigation-list">
                 <li><a class="footer-navigation-items" href="#">About Us</a></li>
-                <li><a class="footer-navigation-items" href="#">Blog</a></li>
+                <li><a class="footer-navigation-items" href="/pages/blog/">Blog</a></li>
                 <li><a class="footer-navigation-items" href="#">Design Services</a></li>
                 <li><a class="footer-navigation-items" href="#">Featured On</a></li>
                 <li><a class="footer-navigation-items" href="#">2018 Holiday Catalog</a></li>
@@ -83,8 +87,8 @@
             </ul>
         </section>
         <section class="footer-Customer-Information">
-            <h2 class="Customer-Information-heading">Customer Information</h2>
-            <ul class="Customer-Information-list">
+            <h2 class="footer-navigation-heading">Customer Information</h2>
+            <ul class="footer-navigation-list">
                 <li><a class="Customer-Information-item" href="#">Contact Us</a></li>
                 <li><a class="Customer-Information-item" href="#">Sale Exclusions</a></li>
                 <li><a class="Customer-Information-item" href="#">Shipping & Returns</a></li>
@@ -94,8 +98,12 @@
             </ul>
         </section>
         <section class="footer-connect">
-            <h2 class="footer-connect-heading">Connect</h2>
-            <div class="email">email</div>
+            <h2 class="footer-navigation-heading">Connect</h2>
+            <form action="/" class="footer-form">
+                <label class="footer-email-label">
+                    <input class="footer-email-label" type="email" name="email" placeholder="Email">                    
+                </label>
+            </form>
             <button class="footer-join-button button">Join</button>
             <ul class="footer-messengers">
                 <li><a class="footer-messenger-link"><img src="/images/facebook.svg" alt="facebook"></a></li>    
