@@ -10,9 +10,9 @@
     <title>DLK</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#">
-            <img class="header-link" src="/images/logo-dlk.svg" alt="logo">
+    <header class="header container">
+        <a href="/index.html">
+            <img class="header-link" src="/images//logo-dlk.svg" alt="logo">
         </a>
         <nav class="header-navigation">
             <ul class="header-list">
@@ -23,56 +23,49 @@
         </nav>
         <ul class="header-right-corner">
             <li><button class="header-search-button"><img src="/images/search-button.jpg" alt="search-button"></button></li>
-            <li><a class="header-contact-button" href="#">Contact  Us</a></li>
+            <li><a class="header-contact-button" href="/pages/contact-us/">Contact  Us</a></li>
         </ul>
     </header>
     <main>
-        <section class="catalog">
-            <h1 class="catalog-heading">Category Products</h1>
-            <ul class="category-navigation">
+        <section class="contact-us">
+            <h1 class="contact-heading">Contact  Us</h1>
+            <ul class="contact-navigation">
                 <li><a class="category-home" href="/index.html">Home</a></li>
                 <li><span class="category-next" >&gt;</span>
-                <li><span class="category-catalog">Catalog</span></li>
-            </ul>
-            <ul class="Category-Products-list">
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/APPAREL-KIDS.jpg" alt="APPAREL KIDS"><span>APPAREL KIDS</span>
-                    </a>
-                </li>
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/HOLIDAY-SHOP.jpg" alt="HOLIDAY SHOP"><span>HOLIDAY SHOP</span>
-                    </a>
-                </li>
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/TOYS.jpg" alt="TOYS"><span>TOYS</span>
-                    </a>
-                </li>
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/ACCESSORIES.jpg" alt="ACCESSORIES"><span>ACCESSORIES</span>
-                    </a>
-                </li>
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/SALE.jpg" alt="SALE"><span>SALE</span>
-                    </a>
-                </li>
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/APPAREL-ADULTS.jpg" alt="APPAREL ADULTS"><span>APPAREL ADULTS</span>
-                    </a>
-                </li>
+                <li><span class="category-blog">Contact  Us</span></li>
             </ul>
         </section>
-        <section class="description">
-            <h2 class="Product Description">Product Description</h2>
-            <p class="description-text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-            <p class="description-text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-            <p class="description-text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+        <form action="/" class="modal-window">
+            <label class="form-lable">
+                Name
+                <input class="input-text" type="text" name="name" placeholder="Ivan Ivanov">
+            </label>
+            <label class="form-lable">
+                Phone
+                <input class="input-text" type="tel" name="phone">
+            </label>
+            <label class="form-lable">
+                Email
+                <input class="input-text" type="email" name="email">
+            </label> 
+            <label class="form-lable">
+                Message
+                <textarea name="message" cols="30" rows="10"></textarea>
+            </label>
+            <label>
+                <input name="consent" type="checkbox" value="consent">
+                By clicking on the button, you consent to the processing of your personal data
+            </label>
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+        <section class="text-block">
+            <h2 class="hidden">header</h2>
+            <p class="contact-us-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+            <p class="contact-us-text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            <p class="contact-bold-text">An expert is waiting to help you!</p>
         </section>
+
+        
     </main>
     <footer class="footer">
         <section class="footer-navigation">
@@ -89,7 +82,7 @@
         <section class="footer-Customer-Information">
             <h2 class="footer-navigation-heading">Customer Information</h2>
             <ul class="footer-navigation-list">
-                <li><a class="Customer-Information-item" href="#">Contact Us</a></li>
+                <li><a class="Customer-Information-item" href="/pages/contact-us/">Contact Us</a></li>
                 <li><a class="Customer-Information-item" href="#">Sale Exclusions</a></li>
                 <li><a class="Customer-Information-item" href="#">Shipping & Returns</a></li>
                 <li><a class="Customer-Information-item" href="#">Terms & Conditions</a></li>
@@ -116,8 +109,7 @@
             <li><p class="footer-bottom-rating">Company Rating &#9733; &#9733; &#9733; &#9733; &#9733;</p></li>
             <li><p class="footer-bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</p></li>
             <li><p class="footer-bottom-web">Web Design — Direct Line Development</p></li>
-
         </ul>
-    </footer>
+    </footer>    
 </body>
 </html>

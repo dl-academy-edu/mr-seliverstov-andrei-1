@@ -1,0 +1,147 @@
+body { 
+    font-family: 'Open Sans', sans-serif;
+}
+
+a { 
+    text-decoration: none; 
+}
+
+html { 
+    box-sizing: border-box; 
+}
+
+*, 
+*::before, 
+*::after { 
+    box-sizing: inherit; 
+}
+
+img { 
+    max-width: 100%; 
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.vector {
+    background: none;
+    border: none;  
+}
+
+/* Header */
+
+.header-navigation-link {
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+}
+
+.header-list {
+    list-style-type: none;
+}
+
+.header-contact-button {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
+}
+
+.header-right-corner {
+    list-style-type: none;
+}
+
+.header-search-button {
+    background: none;
+    border: none;       
+}
+
+/* Footer */
+
+.footer-navigation-heading {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+}
+
+.footer-navigation-items {    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;   
+}
+
+.footer {
+    background: #434343;
+}
+
+.Customer-Information-item {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.footer-navigation-list {
+    list-style-type: none;     
+}
+
+.footer-messengers {
+    list-style-type: none;
+}
+
+.footer-messenger-link {
+    background: #666666;
+    border-radius: 15px;
+}
+
+.footer-bottom {    
+    list-style-type: none;
+}
+
+.footer-bottom-rating {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.footer-bottom-copyright {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.footer-bottom-web {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A2A2A2;
+}
