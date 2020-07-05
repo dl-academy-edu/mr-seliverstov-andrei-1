@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="./style.css">
     <title>DLK</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#">
+    <header class="header container">
+        <a href="/index.html">
             <img class="header-link" src="/images//logo-dlk.svg" alt="logo">
         </a>
         <nav class="header-navigation">
@@ -23,67 +24,95 @@
         </nav>
         <ul class="header-right-corner">
             <li><button class="header-search-button"><img src="/images/search-button.jpg" alt="search-button"></button></li>
-            <li><a class="header-contact-button" href="#">Contact  Us</a></li>
+            <li><a class="header-contact-button" href="/pages/contact-us/">Contact  Us</a></li>
         </ul>
     </header>
     <main>
-        <section class="poster">
+        <section class="poster container">
             <h1 class="hidden">hidden title</h1>
-            <ul class="poster-pagination-list">
-                <li><button class="poster-pagination-button">&mdash;</button></li>
-                <li><button class="poster-pagination-button">&mdash;</button></li>
-                <li><button class="poster-pagination-button">&mdash;</button></li>
-                <li><button class="poster-pagination-button">&mdash;</button></li>
-            </ul>
-            <h2 class="poster-title">THE OOH NOO COLLECTION</h2>
-            <p class="poster-text">Designed in Slovenia</p>
-            <button class="poster-button button">EXPLORE NOW</button>
-            <section class="poster-bottom">
-                <h3 class="hidden">shipping</h3>
-                <p class="poster-bottom-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-            </section>
-            <img class="poster-picture" src="/images/THE-OOH-NOO- COLLECTION.png" alt="poster-picture">            
+            <div class="left-block">
+                <div class="number-block">
+                    <img class="big-number" src="/images/big-number.png" alt="01">
+                </div>
+                <ul class="poster-pagination-list">
+                    <li><button class="poster-pagination-button brown"></button></li>
+                    <li><button class="poster-pagination-button"></button></li>
+                    <li><button class="poster-pagination-button"></button></li>
+                    <li><button class="poster-pagination-button"></button></li>
+                </ul>
+            </div>
             
+            <div class="poster-block">
+                <h2 class="poster-title">THE OOH NOO COLLECTION</h2> 
+                <p class="poster-text">Designed in Slovenia</p>
+                <button class="poster-button button">EXPLORE NOW</button>                
+            </div>   
+            <img class="poster-picture" src="/images/THE-OOH-NOO- COLLECTION.png" alt="poster-picture">            
         </section>
-        <section class="Category-Products">
-            <h2 class="Category-Products-title">Category Products</h2>
-            <ul class="Category-Products-list">
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/APPAREL-KIDS.jpg" alt="APPAREL KIDS"><p class="foto-name">APPAREL KIDS</p>
-                    </a>
-                </li>
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/HOLIDAY-SHOP.jpg" alt="HOLIDAY SHOP"><p class="foto-name">HOLIDAY SHOP</p>
-                    </a>
-                </li>
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/TOYS.jpg" alt="TOYS"><p class="foto-name">TOYS</p>
-                    </a>
-                </li>
-                <li class="Category-Products-card">
-                    <a class="Category-Products-link" href="#">
-                        <img class="Category-Products-img" src="/images/ACCESSORIES.jpg" alt="ACCESSORIES"><p class="foto-name">ACCESSORIES</p>
-                    </a>
-                </li>
-            </ul>
-            <button class="backward-button vector"><img src="images/left-vector.jpg" alt="backward button"></button>
-            <button class="forward-button vector"><img src="images/right-vector.jpg" alt="forward button"></button>
-            <p class="Category-Products-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        <section class="poster-bottom container">
+            <h3 class="hidden">shipping</h3>
+            <p class="poster-bottom-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
-        <section class="delivery-section">
-            <h2 class="delivery-section-heading">Delivery</h2>
-            <button class="delivery-heading-button">Delivery</button><br>            
-            <button class="delivery-heading-button">Guarantee</button><br>      
-            <button class="delivery-heading-button">Credit</button>            
-            <p class="delivery-section-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <p class="delivery-section-text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-            <a class="delivery-link-button button" href="#">LEARN MORE</a>
+        <section class="Category-Products container">
+            <h2 class="Category-Products-title">Category Products</h2>            
+                <ul class="Category-Products-list">
+                    <li class="Category-Products-card">
+                        <a class="Category-Products-link" href="#">
+                            <div class="product-block blue">
+                                <img class="Category-Products-img" src="/images/APPAREL-KIDS.png" alt="APPAREL KIDS">
+                                <p class="foto-name">APPAREL KIDS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="Category-Products-card">                        
+                        <a class="Category-Products-link" href="#">
+                            <div class="product-block pink">
+                                <img class="Category-Products-img" src="/images/HOLIDAY-SHOP.png" alt="HOLIDAY SHOP">
+                                <p class="foto-name">HOLIDAY <br> SHOP</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="Category-Products-card">
+                        <a class="Category-Products-link" href="#">
+                            <div class="product-block beige">
+                                <img class="Category-Products-img" src="/images/TOYS.png" alt="TOYS">
+                                <p class="foto-name">TOYS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="Category-Products-card">
+                        <a class="Category-Products-link" href="#">
+                            <div class="product-block grey">
+                                <img class="Category-Products-img" src="/images/ACCESSORIES.png" alt="ACCESSORIES">
+                                <p class="foto-name">ACCESSORIES</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            
+            <div class="vector-text">                
+                <button class="backward-button vector"><img src="images/left-vector.png" alt="backward button"></button>
+                <button class="forward-button vector"><img src="images/right-vector.png" alt="forward button"></button>
+                <p class="Category-Products-text">Modern finds for the modern home. Curated goods by unique designers<br> around the world from fashion to furniture for kids and adults.</p>
+            </div>            
+        </section>
+        <section class="delivery-section container">       
             <img class="delivery-picture" src="/images/smile-woman.jpg" alt="smile-woman">
+            <div class="delivery-block">
+                <h2 class="delivery-section-heading">Delivery</h2>
+                <ul class="delivery-heading-list">
+                    <li><button class="delivery-heading-button">Delivery</button></li> 
+                    <li><button class="delivery-heading-button">Guarantee</button></li>  
+                    <li><button class="delivery-heading-button">Credit</button></li>
+                </ul>
+                <div class="delivery-text">       
+                    <p class="delivery-section-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <p class="delivery-section-text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                </div>
+                <a class="delivery-link-button button" href="#">LEARN MORE</a>
+            </div>
         </section>
-        <section class="partners">
+        <section class="partners container">
             <h2 class="hidden">partners</h2>
             <ul class="partner-list">
                 <li><a href="#"><img src="/images/mail-ru-group.jpg" alt="mail.ru-group"></a></li>
@@ -92,86 +121,117 @@
                 <li><a href="#"><img src="/images/owox.jpg" alt="owox"></a></li>
             </ul>
         </section>
-        <section class="about-us">
-            <h2 class="about-us-heading">Design Life Kids</h2>
-            <h3 class="about-us-subheading">About Us</h3>
-            <p class="about-us-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <a class="about-us-button button" href="#">buy now</a>
-        </section>
-        <section class="contacts">
-            <h2 class="contacts-heading">Contacts</h2>
-            <p class="contacts-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <div class="map"><img src="./images/map.jpg" alt="map"></div>
-        </section>
+        <div class="bottom-blocks container">
+            <section class="about-us">
+                <h2 class="about-us-heading">Design Life Kids</h2>
+                <h3 class="about-us-subheading">About Us</h3>
+                <p class="about-us-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <a class="about-us-button button" href="#">buy now</a>
+            </section>
+            <section class="contacts">
+                <h2 class="contacts-heading">Contacts</h2>
+                <p class="contacts-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <div class="map"><img src="./images/map.jpg" alt="map"></div>
+            </section>
+        </div>        
     </main>
     <footer class="footer">
-        <section class="footer-navigation">
-            <h2 class="footer-navigation-heading">Navigation</h2>
-            <ul class="footer-navigation-list">
-                <li><a class="footer-navigation-items" href="#">About Us</a></li>
-                <li><a class="footer-navigation-items" href="/pages/blog/">Blog</a></li>
-                <li><a class="footer-navigation-items" href="#">Design Services</a></li>
-                <li><a class="footer-navigation-items" href="#">Featured On</a></li>
-                <li><a class="footer-navigation-items" href="#">2018 Holiday Catalog</a></li>
-                <li><a class="footer-navigation-items" href="#">Shop By Designer</a></li>
+        <section class="container">
+            <h2 class="hidden">footer container</h2>
+            <div class="three-columns">
+                <section class="footer-navigation">
+                    <h2 class="footer-navigation-heading">Navigation</h2>
+                    <span class="footer-line"></span>
+                    <ul class="footer-navigation-list">
+                        <li><a class="footer-navigation-items" href="#">About Us</a></li>
+                        <li><a class="footer-navigation-items" href="/pages/blog/">Blog</a></li>
+                        <li><a class="footer-navigation-items" href="#">Design Services</a></li>
+                        <li><a class="footer-navigation-items" href="#">Featured On</a></li>
+                        <li><a class="footer-navigation-items" href="#">2018 Holiday Catalog</a></li>
+                        <li><a class="footer-navigation-items" href="#">Shop By Designer</a></li>
+                    </ul>
+                </section>
+                <section class="footer-Customer-Information">
+                    <h2 class="footer-navigation-heading">Customer Information</h2>
+                    <span class="footer-line"></span>
+                    <ul class="footer-navigation-list">
+                        <li><a class="Customer-Information-item" href="/pages/contact-us/">Contact Us</a></li>
+                        <li><a class="Customer-Information-item" href="#">Sale Exclusions</a></li>
+                        <li><a class="Customer-Information-item" href="#">Shipping & Returns</a></li>
+                        <li><a class="Customer-Information-item" href="#">Terms & Conditions</a></li>
+                        <li><a class="Customer-Information-item" href="#">Privacy Policy</a></li>
+                        <li><a class="Customer-Information-item" href="#">Search</a></li>
+                    </ul>                           
+                </section>
+                <section class="footer-connect">
+                    <h2 class="footer-navigation-heading">Connect</h2>
+                    <span class="footer-line"></span>
+                    <div class="email-join">
+                        <form action="/" class="footer-form">
+                            <label>
+                                <input class="footer-email-label" type="email" name="email" placeholder="Email">                    
+                            </label>
+                        </form>
+                        <button class="footer-join-button button">Join</button>
+                    </div>                    
+                    <ul class="footer-messengers">
+                        <li><a class="footer-messenger-link" href="#" aria-label="link to facebook">
+                                <img class="picture-position" src="/images/facebook.svg" alt="facebook">
+                            </a></li>    
+                        <li><a class="footer-messenger-link" href="#" aria-label="link to twitter">
+                                <img class="picture-position" src="/images/twitter.svg" alt="twitter">
+                            </a></li>
+                        <li><a class="footer-messenger-link" href="#" aria-label="link to pinterest">
+                                <img class="picture-position" src="/images/pinterest.svg" alt="pinterest">
+                            </a></li>
+                        <li><a class="footer-messenger-link" href="#" aria-label="link to instagram">
+                                <img class="picture-position" src="/images/instagram.svg" alt="instagram">
+                            </a></li>
+                    </ul>
+                </section>
+            </div>     
+            <div class="last-line"></div>       
+            <ul class="footer-bottom">
+                <li><p class="footer-bottom-rating">Company Rating &nbsp; &nbsp; &nbsp; &#9733; &#9733; &#9733; &#9733; &#9733;</p></li>
+                <li><p class="footer-bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</p> </li>
+                <li><p class="footer-bottom-web">Web Design — Direct Line Development</p></li>    
             </ul>
-        </section>
-        <section class="footer-Customer-Information">
-            <h2 class="footer-navigation-heading">Customer Information</h2>
-            <ul class="footer-navigation-list">
-                <li><a class="Customer-Information-item" href="#">Contact Us</a></li>
-                <li><a class="Customer-Information-item" href="#">Sale Exclusions</a></li>
-                <li><a class="Customer-Information-item" href="#">Shipping & Returns</a></li>
-                <li><a class="Customer-Information-item" href="#">Terms & Conditions</a></li>
-                <li><a class="Customer-Information-item" href="#">Privacy Policy</a></li>
-                <li><a class="Customer-Information-item" href="#">Search</a></li>
-            </ul>
-        </section>
-        <section class="footer-connect">
-            <h2 class="footer-navigation-heading">Connect</h2>
-            <form action="/" class="footer-form">
-                <label class="footer-email-label">
-                    <input class="footer-email-label" type="email" name="email" placeholder="Email">                    
-                </label>
-            </form>
-            <button class="footer-join-button button">Join</button>
-            <ul class="footer-messengers">
-                <li><a class="footer-messenger-link"><img src="/images/facebook.svg" alt="facebook"></a></li>    
-                <li><a class="footer-messenger-link"><img src="/images/twitter.svg" alt="twitter"></a></li>
-                <li><a class="footer-messenger-link"><img src="/images/pinterest.svg" alt="pinterest"></a></li>
-                <li><a class="footer-messenger-link"><img src="/images/instagram.svg" alt="instagram"></a></li>
-            </ul>
-        </section>
-        <ul class="footer-bottom">
-            <li><p class="footer-bottom-rating">Company Rating &#9733; &#9733; &#9733; &#9733; &#9733;</p></li>
-            <li><p class="footer-bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</p></li>
-            <li><p class="footer-bottom-web">Web Design — Direct Line Development</p></li>
-
-        </ul>
+        </section>        
     </footer>
-    <form action="/" class="modal-window">
-        <label class="form-lable">
-            Name
-            <input class="input-text" type="text" name="name">
-        </label>
-        <label class="form-lable">
-            Phone
-            <input class="input-text" type="tel" name="phone">
-        </label>
-        <label class="form-lable">
-            Email
-            <input class="input-text" type="email" name="email">
-        </label> 
-        <label class="form-lable">
-            Message
-            <textarea name="message" cols="30" rows="10"></textarea>
-        </label>
-        <label>
-            <input name="consent" type="checkbox">
-            By clicking on the button, you consent to the processing of your personal data
-        </label>
-        <button class="submit-button" type="submit">Submit</button>
-        <button class="exit-button" type="button">&#10006;</button>
-    </form>
+    <div class="modal-background">
+        <form action="/" class="modal-window main-page">
+            <div class="form-cell-600">
+                <label class="form-lable">
+                    <span class="input-label-text">Name</span>
+                    <input class="input-text" type="text" name="name">                    
+                </label>
+            </div>                
+            <div class="form-row">
+                <div class="form-cell-50">
+                    <label class="form-lable">
+                        <span class="input-label-text">Phone</span>
+                        <input class="input-text" type="tel" name="phone">
+                    </label>
+                </div>
+                <div class="form-cell-50">
+                    <label class="form-lable">
+                        <span class="input-label-text">Email</span>
+                        <input class="input-text" type="email" name="email">
+                    </label> 
+                </div>
+            </div>            
+            <label class="form-label">    
+                <span class="input-label-text">Message</span>
+                <textarea class="form-textarea" name="message" cols="30" rows="10"></textarea>
+            </label>
+            <label class="consent">
+                <input class="hidden" name="consent" type="checkbox" value="consent">
+                <span class="checkbox-square"></span>
+                <span class="clicking-button">By clicking on the button, you consent to the processing of your personal data</span>
+            </label>
+            <button class="submit-button button" type="submit">Submit</button>
+            <button class="exit-button" type="button" aria-label="exit"></button>
+        </form>
+    </div>    
 </body>
 </html>
