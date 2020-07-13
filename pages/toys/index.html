@@ -10,8 +10,8 @@
     <title>DLK</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#">
+    <header class="header container">
+        <a href="/index.html">
             <img class="header-link" src="/images//logo-dlk.svg" alt="logo">
         </a>
         <nav class="header-navigation">
@@ -23,207 +23,248 @@
         </nav>
         <ul class="header-right-corner">
             <li><button class="header-search-button"><img src="/images/search-button.jpg" alt="search-button"></button></li>
-            <li><a class="header-contact-button" href="#">Contact  Us</a></li>
+            <li><a class="header-contact-button" href="/pages/contact-us/">Contact  Us</a></li>
         </ul>
     </header>
     <main>
-        <section class="toy">
+        <section class="toy container">
             <h1 class="toy-heading">Toy for kids</h1>
             <ul class="toy-navigation">
                 <li>
-                    <ul class="category-navigation">
-                        <li><a class="category-home" href="/index.html">Home</a></li>
-                        <li><span class="category-next" >&gt;</span>
-                        <li><a class="category-catalog" href="/pages/catalog/">Catalog</a></li>
-                        <li><span class="category-next" >&gt;</span>
-                        <li><span class="category-catalog">Toys</span></li>
+                    <ul class="breadcrumbs-navigation">
+                        <li><a class="breadcrumbs" href="/index.html">Home</a></li>
+                        <li><span class="breadcrumbs category-next" ><img src="/images/breadcrumb-vector.png" alt="breadcrumb vector"></span>
+                        <li><a class="breadcrumbs" href="/pages/catalog/">Catalog</a></li>
+                        <li><span class="breadcrumbs category-next" ><img src="/images/breadcrumb-vector.png" alt="breadcrumb vector"></span>
+                        <li><span class="breadcrumbs last-crumb">Toys</span></li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <form action="/" class="parameters">        
-            <fieldset>
-                <label class="parameter-settings">
-                    <span class="parameter-header">Cost</span>
-                    <input class="range" type="range" name="cost" min="0" max="500" step="10">
-                    <span class="choosen-parameters">0</span>
-                    <span class="choosen-parameters">500</span>
-                </label>  
-            </fieldset>
-            <fieldset>
-                <span class="parameter-header">Color</span>               
-                <ul>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="color" name="color" type="checkbox" value="black">
-                            <span class="choosen-parameters">Black</span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="color" name="color" type="checkbox" value="blue">
-                            <span class="choosen-parameters">Blue</span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="color" name="color" type="checkbox" value="green">
-                            <span class="choosen-parameters">Green</span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="color" name="color" type="checkbox" value="white">
-                            <span class="choosen-parameters">White</span>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset> 
-            <fieldset>
-                <span class="parameter-header">Delivery</span>
-                <ul>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="delivery" name="shipping" type="radio" value="free">
-                            <span class="choosen-parameters">Free shipping</span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="delivery" name="shipping" type="radio" value="fast">
-                            <span class="choosen-parameters">Fast shipping</span>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>    
-            <fieldset>
-                <span class="parameter-header">Amount</span>
-                <ul>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="amount" name="amount-of-goods" type="radio" value="0-5">
-                            <span class="choosen-parameters">0-5</span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="amount" name="amount-of-goods" type="radio" value="10-20">
-                            <span class="choosen-parameters">10-20</span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="parameter-settings">
-                            <input class="amount" name="amount-of-goods" type="radio" value="20-50">
-                            <span class="choosen-parameters">20-50</span>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>  
-            <button class="apply-button button">Apply</button>
-        </form>
-        <section class="toys-cards">
+        <div class="blue-field">
+            <form action="/" class="parameters container">
+                <fieldset class="toy-fieldset">
+                    <label class="parameter-settings cost">
+                        <span class="parameter-header">Cost</span>
+                        <input class="range" type="range" name="cost" min="0" max="500" step="10">
+                        <span class="digital-begin">0</span>
+                        <span class="digital-end">500</span>
+                    </label>  
+                </fieldset>
+                <fieldset class="toy-fieldset color-block">
+                    <span class="parameter-header">Color</span>               
+                    <ul class="fieldset-list">
+                        <li class="fieldset-item">
+                            <label class="parameter-settings">
+                                <input class="color hidden" name="color" type="checkbox" value="black">
+                                <span class="choosen-parameters color-checkbox">Black</span>
+                            </label>
+                        </li>
+                        <li class="fieldset-item">
+                            <label class="parameter-settings">
+                                <input class="color hidden" name="color" type="checkbox" value="blue">
+                                <span class="choosen-parameters color-checkbox">Blue</span>
+                            </label>
+                        </li>
+                        <li class="fieldset-item">
+                            <label class="parameter-settings">
+                                <input class="color hidden" name="color" type="checkbox" value="green" disabled>
+                                <span class="choosen-parameters color-checkbox">Green</span>
+                            </label>
+                        </li>
+                        <li class="fieldset-item">
+                            <label class="parameter-settings">
+                                <input class="color hidden" name="color" type="checkbox" value="white">
+                                <span class="choosen-parameters color-checkbox">White</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset> 
+                <fieldset class="toy-fieldset delivery-block">
+                    <span class="parameter-header">Delivery</span>
+                    <ul class="fieldset-list">
+                        <li class="fieldset-item-delivery">
+                            <label class="parameter-settings">
+                                <input class="delivery hidden" name="shipping" type="radio" value="free">
+                                <span class="choosen-parameters delivery-radio">Free shipping</span>
+                            </label>
+                        </li>
+                        <li class="fieldset-item-delivery">
+                            <label class="parameter-settings">
+                                <input class="delivery hidden" name="shipping" type="radio" value="fast" disabled>
+                                <span class="choosen-parameters delivery-radio">Fast shipping</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>    
+                <fieldset class="toy-fieldset amount-block">
+                    <span class="parameter-header">Amount</span>
+                    <ul class="fieldset-list-amount">
+                        <li class="fieldset-item-amount">
+                            <label class="parameter-settings-amount">
+                                <input class="amount hidden" name="amount-of-goods" type="radio" value="0-5" checked>
+                                <span class="choosen-parameters amount-radio"></span>                                  
+                                <span class="digitals">0-5</span>
+                            </label>
+                        </li>
+                        <li class="fieldset-item-amount">
+                            <label class="parameter-settings-amount">
+                                <input class="amount hidden" name="amount-of-goods" type="radio" value="10-20">
+                                <span class="choosen-parameters amount-radio"></span>    
+                                <span class="digitals">10-20</span>                            
+                            </label>                            
+                        </li>
+                        <li class="fieldset-item-amount">
+                            <label class="parameter-settings-amount">
+                                <input class="amount hidden" name="amount-of-goods" type="radio" value="20-50">
+                                <span class="choosen-parameters amount-radio"></span>                                
+                                <span class="digitals">20-50</span>
+                            </label>
+                        </li>
+                        </ul>
+                </fieldset>  
+                <button class="apply-button button">Apply</button> 
+            </form>
+        </div>        
+        <section class="toys-cards container">
             <h2 class="hidden">toys-cards</h2>
             <ul class="toys-cards-list">
-                <li>
-                    <a href="#">
-                        <img class="toys-image" src="/images/SHARKY-BEAN-BAG-CHAIR-COVER.jpg" alt="SHARKY BEAN BAG CHAIR COVER">
+                <li class="toys-card-item">
+                        <div class="image-block">
+                            <img class="toys-image" src="/images/SHARKY-BEAN-BAG-CHAIR-COVER.jpg" alt="SHARKY BEAN BAG CHAIR COVER">
+                            <a class="learn-more" href="#">
+                                <div class="learn-more-text">LEARN MORE</div>
+                            </a>
+                        </div>
                         <p class="toy-description">SHARKY BEAN BAG CHAIR COVER</p>
                         <p class="toy-price">$60.00 USD</p>
-                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img class="toys-image" src="/images/BRASS-DECO-FRAMES.jpg" alt="BRASS DECO FRAMES">
+                <li class="toys-card-item">
+                        <div class="image-block">
+                            <img class="toys-image" src="/images/BRASS-DECO-FRAMES.jpg" alt="BRASS DECO FRAMES">
+                            <a class="learn-more" href="#">
+                                <div class="learn-more-text">LEARN MORE</div>     
+                            </a>
+                        </div>
                         <p class="toy-description">BRASS DECO FRAMES</p>
                         <p class="toy-price">$66.00 USD</p>
-                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img class="toys-image" src="/images/CIBO-FULL-APRON.jpg" alt="CIBO FULL APRON">
+                <li class="toys-card-item">
+                        <div class="image-block">
+                            <img class="toys-image" src="/images/CIBO-FULL-APRON.jpg" alt="CIBO FULL APRON">
+                            <a class="learn-more" href="#">
+                                <div class="learn-more-text">LEARN MORE</div>     
+                            </a>
+                        </div>
                         <p class="toy-description">CIBO FULL APRON</p>
                         <p class="toy-price">$60.00 USD</p>
-                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img class="toys-image" src="/images/GATCHA-GATCHA-GUMBALL-MACHINE.jpg" alt="GATCHA GATCHA GUMBALL MACHINE">
+                <li class="toys-card-item">
+                        <div class="image-block">
+                            <img class="toys-image" src="/images/GATCHA-GATCHA-GUMBALL-MACHINE.jpg" alt="GATCHA GATCHA GUMBALL MACHINE">
+                            <a class="learn-more" href="#">
+                                <div class="learn-more-text">LEARN MORE</div>     
+                            </a>
+                        </div>
                         <p class="toy-description">GATCHA GATCHA GUMBALL MACHINE</p>
                         <p class="toy-price">$56.00 USD</p>
-                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img class="toys-image" src="/images/CHRISTMAS-ADVENT-SCENTED-CANDLE.jpg" alt="CHRISTMAS ADVENT SCENTED CANDLE">
+                <li class="toys-card-item">
+                        <div class="image-block">
+                            <img class="toys-image" src="/images/CHRISTMAS-ADVENT-SCENTED-CANDLE.jpg" alt="CHRISTMAS ADVENT SCENTED CANDLE">
+                            <a class="learn-more" href="#">
+                                <div class="learn-more-text">LEARN MORE</div>     
+                            </a>
+                        </div>
                         <p class="toy-description">CHRISTMAS ADVENT SCENTED CANDLE</p>
                         <p class="toy-price">$29.00 USD</p>
-                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img class="toys-image" src="/images/TANGLE-SPINNING-TEA-LIGHT.jpg" alt="TANGLE SPINNING TEA LIGHT">
+                <li class="toys-card-item">
+                        <div class="image-block">
+                            <img class="toys-image" src="/images/TANGLE-SPINNING-TEA-LIGHT.jpg" alt="TANGLE SPINNING TEA LIGHT">
+                            <a class="learn-more" href="#">
+                                <div class="learn-more-text">LEARN MORE</div>     
+                            </a>
+                        </div>
                         <p class="toy-description">TANGLE SPINNING TEA LIGHT</p>
                         <p class="toy-price">$56.00 USD</p>
-                    </a>
                 </li>
             </ul>
             <section class="page-navigation">
                 <h2 class="hidden">pages</h2>
-                <a class="vector" href="#">&lt;</a>
+                    <a class="vector-left" href="#"></a>                
                 <ul class="pages">
-                    <li><a class="page-numbers" href="#">1</a></li>
+                    <li><a class="page-numbers first-page" href="#">1</a></li>
                     <li><a class="page-numbers" href="#">2</a></li>
                     <li><a class="page-numbers" href="#">3</a></li>
                     <li><a class="page-numbers" href="#">4</a></li>
+                    <li><a class="page-numbers transparent" href="#">4</a></li>
                 </ul>
-                <a class="vector" href="#">&gt;</a>
+                <a class="vector-right" href="#"></a>
             </section>
         </section>
     </main>
     <footer class="footer">
-        <section class="footer-navigation">
-            <h2 class="footer-navigation-heading">Navigation</h2>
-            <ul class="footer-navigation-list">
-                <li><a class="footer-navigation-items" href="#">About Us</a></li>
-                <li><a class="footer-navigation-items" href="/pages/blog/">Blog</a></li>
-                <li><a class="footer-navigation-items" href="#">Design Services</a></li>
-                <li><a class="footer-navigation-items" href="#">Featured On</a></li>
-                <li><a class="footer-navigation-items" href="#">2018 Holiday Catalog</a></li>
-                <li><a class="footer-navigation-items" href="#">Shop By Designer</a></li>
+        <section class="container">
+            <h2 class="hidden">footer container</h2>
+            <div class="three-columns">
+                <section class="footer-navigation">
+                    <h2 class="footer-navigation-heading">Navigation</h2>
+                    <span class="footer-line"></span>
+                    <ul class="footer-navigation-list">
+                        <li><a class="footer-navigation-items" href="#">About Us</a></li>
+                        <li><a class="footer-navigation-items" href="/pages/blog/">Blog</a></li>
+                        <li><a class="footer-navigation-items" href="#">Design Services</a></li>
+                        <li><a class="footer-navigation-items" href="#">Featured On</a></li>
+                        <li><a class="footer-navigation-items" href="#">2018 Holiday Catalog</a></li>
+                        <li><a class="footer-navigation-items" href="#">Shop By Designer</a></li>
+                    </ul>
+                </section>
+                <section class="footer-Customer-Information">
+                    <h2 class="footer-navigation-heading">Customer Information</h2>
+                    <span class="footer-line"></span>
+                    <ul class="footer-navigation-list">
+                        <li><a class="Customer-Information-item" href="/pages/contact-us/">Contact Us</a></li>
+                        <li><a class="Customer-Information-item" href="#">Sale Exclusions</a></li>
+                        <li><a class="Customer-Information-item" href="#">Shipping & Returns</a></li>
+                        <li><a class="Customer-Information-item" href="#">Terms & Conditions</a></li>
+                        <li><a class="Customer-Information-item" href="#">Privacy Policy</a></li>
+                        <li><a class="Customer-Information-item" href="#">Search</a></li>
+                    </ul>                           
+                </section>
+                <section class="footer-connect">
+                    <h2 class="footer-navigation-heading">Connect</h2>
+                    <span class="footer-line"></span>
+                    <div class="email-join">
+                        <form action="/" class="footer-form">
+                            <label>
+                                <input class="footer-email-label" type="email" name="email" placeholder="Email">                    
+                            </label>
+                        </form>
+                        <button class="footer-join-button button">Join</button>
+                    </div>                    
+                    <ul class="footer-messengers">
+                        <li><a class="footer-messenger-link" href="#" aria-label="link to facebook">
+                                <img class="picture-position" src="/images/facebook.svg" alt="facebook">
+                            </a></li>    
+                        <li><a class="footer-messenger-link" href="#" aria-label="link to twitter">
+                                <img class="picture-position" src="/images/twitter.svg" alt="twitter">
+                            </a></li>
+                        <li><a class="footer-messenger-link" href="#" aria-label="link to pinterest">
+                                <img class="picture-position" src="/images/pinterest.svg" alt="pinterest">
+                            </a></li>
+                        <li><a class="footer-messenger-link" href="#" aria-label="link to instagram">
+                                <img class="picture-position" src="/images/instagram.svg" alt="instagram">
+                            </a></li>
+                    </ul>
+                </section>
+            </div>            
+            <ul class="footer-bottom">
+                <li><p class="footer-bottom-rating">Company Rating &nbsp; &nbsp; &nbsp; &#9733; &#9733; &#9733; &#9733; &#9733;</p></li>
+                <li><p class="footer-bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</p> </li>
+                <li><p class="footer-bottom-web">Web Design — Direct Line Development</p></li>    
             </ul>
-        </section>
-        <section class="footer-Customer-Information">
-            <h2 class="footer-navigation-heading">Customer Information</h2>
-            <ul class="footer-navigation-list">
-                <li><a class="Customer-Information-item" href="#">Contact Us</a></li>
-                <li><a class="Customer-Information-item" href="#">Sale Exclusions</a></li>
-                <li><a class="Customer-Information-item" href="#">Shipping & Returns</a></li>
-                <li><a class="Customer-Information-item" href="#">Terms & Conditions</a></li>
-                <li><a class="Customer-Information-item" href="#">Privacy Policy</a></li>
-                <li><a class="Customer-Information-item" href="#">Search</a></li>
-            </ul>
-        </section>
-        <section class="footer-connect">
-            <h2 class="footer-navigation-heading">Connect</h2>
-            <form action="/" class="footer-form">
-                <label class="footer-email-label">
-                    <input class="footer-email-label" type="email" name="email" placeholder="Email">                    
-                </label>
-            </form>
-            <button class="footer-join-button button">Join</button>
-            <ul class="footer-messengers">
-                <li><a class="footer-messenger-link"><img src="/images/facebook.svg" alt="facebook"></a></li>    
-                <li><a class="footer-messenger-link"><img src="/images/twitter.svg" alt="twitter"></a></li>
-                <li><a class="footer-messenger-link"><img src="/images/pinterest.svg" alt="pinterest"></a></li>
-                <li><a class="footer-messenger-link"><img src="/images/instagram.svg" alt="instagram"></a></li>
-            </ul>
-        </section>
-        <ul class="footer-bottom">
-            <li><p class="footer-bottom-rating">Company Rating &#9733; &#9733; &#9733; &#9733; &#9733;</p></li>
-            <li><p class="footer-bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</p></li>
-            <li><p class="footer-bottom-web">Web Design — Direct Line Development</p></li>
-
-        </ul>
+        </section>        
     </footer>
 </body>
 </html>
