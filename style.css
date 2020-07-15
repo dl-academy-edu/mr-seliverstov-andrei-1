@@ -1,9 +1,14 @@
 /* Poster */
 
+.container-mini {
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .poster {
     display: flex;
     background: #EEE4DB;
-    width: 1200px;
     height: 372px;
     margin-top: 129px;
 }
@@ -23,6 +28,8 @@
     color: #1E0606;
     margin-bottom: 20px;
     margin-top: 0;
+    flex-wrap: nowrap;
+    min-width: 307px;
 }
 
 .poster-text {
@@ -61,7 +68,7 @@
 
 .poster-pagination-list {
     list-style-type: none;
-    padding-left: 31px;
+    padding-left: 21px;
     margin: 0;
 }
 
@@ -74,6 +81,7 @@
 
 .poster-pagination-button:hover {
     background-color: rgba(30, 6, 6, 0.6);
+    cursor: pointer;
 }
 
 .brown {
@@ -96,7 +104,7 @@
     margin-top: -89px;
     width: 635.49px;
     height: 461px;
-    margin-right: 99px;
+    margin-right: 60px;
 }
 
 /* Category Products */
@@ -112,27 +120,15 @@
     margin-top: 90px;
 }
 
-.foto-name {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #ffffff;    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -90%);
-    text-align: center;
-}
-
-.foto-name:hover {
-    text-decoration: underline;
-}
-
-.foto-name:active {
-    text-decoration: underline;
+.product-block {
+    position: relative;
+    display: flex;
+    padding: 20px 50px;    
+    box-sizing: border-box;
+    width: 280px;
+    height: 270px;      
+    justify-content: center;
+    align-items: center;
 }
 
 .Category-Products-list {
@@ -143,28 +139,27 @@
     flex-wrap: wrap;
 }
 
-.Category-Products-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
+.Category-Products-img {    
+    position: absolute;
 }
 
-.vector-text {
-    display: flex;
-    align-items: center;
-}
-
-.Category-Products-text {
-    margin-left: 20px;
-}
-
-.product-block {
+.foto-name {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;  
     position: relative;
-    display: flex;
-    width: 280px;
-    height: 270px;  
+}
+
+.foto-name:hover {
+    text-decoration: underline;
+}
+
+.foto-name:active {
+    text-decoration: underline;
 }
 
 .product-block:hover {
@@ -173,10 +168,6 @@
 
 .Category-Products-card {
     padding: 10px 0;
-}
-
-.Category-Products-img {
-    margin: auto;
 }
 
 .blue {
@@ -193,6 +184,28 @@
 
 .grey {
     background-color: rgba(9, 3, 79, 0.17);
+}
+
+.Category-Products-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;    
+    margin-left: 20px;
+}
+
+.first-vector {
+    border: none;  
+    background: rgba(112, 187, 220, 0.2);
+    width: 37px;
+    height: 37px;
+    margin-right: 6px;
+}
+
+.vector-text {
+    display: flex;
+    align-items: center;
 }
 
 /* Delivery */
@@ -225,6 +238,16 @@
     height: 55px;
     text-align: left;
     padding-left: 60px;
+}
+
+.delivery-heading-button:hover {
+    background-color: rgba(112, 187, 220, 0.2);
+    font-weight: 700;
+}
+
+.delivery-heading-button:active {
+    background-color: rgba(112, 187, 220, 0.2);
+    font-weight: 700;
 }
 
 .delivery-section-text {
@@ -276,7 +299,9 @@
     margin-right: 57px;
     background: #E1F0F7;
     padding: 30px;
-    height: 236px;
+    min-height: 236px;
+    max-width: 543px;
+    width: 100%;
 }
 
 .about-us-heading {
@@ -317,6 +342,8 @@
     padding: 30px;
     background: #E1F0F7;
     height: 209px;
+    max-width: 543px;
+    width: 100%;
 }
 
 .contacts-heading {
@@ -355,6 +382,10 @@
     bottom: 0;
     background-color: rgba(125, 151, 218, 0.8);
     display: none;
+}
+
+.modal-background_open {
+    display: flex;
 }
 
 .main-page {
