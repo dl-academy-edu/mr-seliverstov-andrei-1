@@ -4,6 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 20px;
 }
 
 .card-block {
@@ -17,7 +19,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #818181;
-    margin: 20px 0 10px;
+    margin: 17px 0 10px;
 }
 
 .blog-desription-heading {
@@ -47,6 +49,6 @@
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
-    margin: 15px 0 40px;
+    margin: 15px 0 33px;
 }
 
