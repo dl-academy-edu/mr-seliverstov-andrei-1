@@ -15,6 +15,7 @@
     line-height: 22px;
     color: #1E0606;
     margin-bottom: 20px;
+    margin-top: 1px;
 }
 
 .contact-bold-text {
@@ -25,6 +26,7 @@
     line-height: 34px;
     text-transform: uppercase;
     color: #C29974;
+    margin-top: -3px;
 }
 
 

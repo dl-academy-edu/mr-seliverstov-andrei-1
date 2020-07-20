@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/common.min.css">
+    <link rel="stylesheet" href="./style.min.css">
     <title>DLK</title>
 </head>
 <body>
@@ -115,10 +115,10 @@
         <section class="partners container">
             <h2 class="hidden">partners</h2>
             <ul class="partner-list">
-                <li><a href="#"><img src="/images/mail-ru-group.jpg" alt="mail.ru-group"></a></li>
-                <li><a href="#"><img src="/images/apple.jpg" alt="apple"></a></li>
-                <li><a href="#"><img src="/images/eltex.jpg" alt="eltex"></a></li>
-                <li><a href="#"><img src="/images/owox.jpg" alt="owox"></a></li>
+                <li class="partner-item"><a href="#"><img src="/images/mail-ru-group.jpg" alt="mail.ru-group"></a></li>
+                <li class="partner-item"><a href="#"><img src="/images/apple.jpg" alt="apple"></a></li>
+                <li class="partner-item"><a href="#"><img src="/images/eltex.jpg" alt="eltex"></a></li>
+                <li class="partner-item"><a href="#"><img src="/images/owox.jpg" alt="owox"></a></li>
             </ul>
         </section>
         <div class="bottom-blocks container">
@@ -189,8 +189,7 @@
                             </a></li>
                     </ul>
                 </section>
-            </div>     
-            <div class="last-line"></div>       
+            </div>       
             <ul class="footer-bottom">
                 <li><p class="footer-bottom-rating">Company Rating &nbsp; &nbsp; &nbsp; &#9733; &#9733; &#9733; &#9733; &#9733;</p></li>
                 <li><p class="footer-bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</p> </li>
@@ -225,7 +224,7 @@
                 <textarea class="form-textarea" name="message" cols="30" rows="10"></textarea>
             </label>
             <label class="consent">
-                <input class="hidden" name="consent" type="checkbox" value="consent">
+                <input class="hidden input-consent" name="consent" type="checkbox" value="consent">
                 <span class="checkbox-square"></span>
                 <span class="clicking-button">By clicking on the button, you consent to the processing of your personal data</span>
             </label>
@@ -233,6 +232,6 @@
             <button class="exit-button exit-button_js" type="button" aria-label="exit"></button>
         </form>
     </div>    
-    <script src="/main.js"></script>
+    <script src="/main.min.js"></script>
 </body>
 </html>
